@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: 'Roboto', sans-serif;
+}
+.profile-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+.profile-top img{
+    width: 20vw;
+    padding: 1em;
+    border-radius: 50%;
+}
+.names{
+    font-weight: normal;
+}
+.names span{
+    font-size: 1.1em;
+}
+.location, .email, .twitter{
+    font-size: .95em;
+    display: flex;
+    align-items: center;
+    margin-bottom: .4em;
+}
+.dot{
+    color: red;
+}
+.follower-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+}
+.profile-bottom{
+    text-align: left;
+    padding: 1em;
+}
+.profile-bottom-div{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    font-size:  17px;
+    margin-right: .4em;
+    color: rgb(87, 87, 87);
+}
+.edit-profile, .search-repo, .repo-type, .repo-language, .new-repo{
+    height:2em;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2em;
+    font-weight: 420;
+    font-size: .95em;
+    background-color: rgb(249, 250, 252);
+    border-radius: .4em;
+    border: 1px solid rgb(233, 230, 230);
+}
+
+/* title styling */
+.titles{
+    border-bottom: 1px solid #d9d9dd;
+    height: 10vh;
+    width: 100vw;
+}
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15em;
+}
+.headings li{
+    list-style-type: none;
+    margin: 1em;
+}
+.headings .icons{
+    margin-right: .5em;
+    color: #959da5;
+}

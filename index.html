@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9a8df72958.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- the navbar -->
+    <nav class='header'>
+        <!-- left part of the navbar -->
+        <div class='nav-left'>
+            <i class="fab fa-github github-icon"></i>
+
+            <!-- the search bar -->
+           <div class="input-container">
+                <input type="search" placeholder="Search or jump to..." >
+                <img src="./search-key-slash.svg" alt="search slash image">
+           </div>
+           
+            <ul class='nav-ul'>
+                <li>Pull requests</li>
+                <li>Issues</li>
+                <li>Marketplace</li>
+                <li>Explore</li>
+            </ul>
+        </div>
+
+        <!-- right part of the navbar -->
+        <div class='nav-right'>
+            <i class="far fa-bell bell-icon icon"></i>
+
+            <div>
+                <i class="fas fa-plus add-icon icon"></i>     
+                <i class="fas fa-sort-down arrow-icon icon"></i>   
+            </div>
+
+            <div>
+                <img src="./search-key-slash.svg" alt="user's github avatar" class="little-avatar">
+                <i class="fas fa-sort-down arrow-icon icon"></i> 
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <div class="titles">
+        <ul class="headings">
+            <li><i class="fas fa-book-open icons"></i> Overview</li>
+            <li><i class="fas fa-book icons"></i> Repositories</li>
+            <li><i class="fas fa-th-large icons"></i>Projects</li>
+            <li><i class="fas fa-cube icons"></i>Packages</li>
+        </ul>
+    </div>
+
+
+    <!-- profile details section -->
+    <section class='profile'>
+        <!-- the top section of the profile details -->
+        <div class='profile-top'>
+            <img src="" alt='user avatar' class="user-avatar"/>
+
+            <div class='names'>
+                <h1 class='full-name'>Hafsah Emekoma</h1>
+                <span class='login'>hafsy</span>
+            </div>
+        </div>
+
+        <div class='profile-bottom'>
+            <!-- bottom section of the profile details -->
+             <span class="bio">bio</span>
+             <p class='edit-profile'>Edit profile</p>
+
+            <div class='profile-bottom-div'>
+                <div class='follower-info'>
+                    <i class="fas fa-user-friends"></i>
+                    <span class="followers">{followers} 
+                    </span>
+                    <span class="following">following</span>
+                    <i class="far fa-star icons"></i> {starredRepositories}
+                 </div>
+                 
+                 <div>
+
+                     <div class='location'>
+                        <i class="fas fa-map-marker-alt icons"></i>
+                        <span class="location-name">location</span>
+                    </div>
+                
+                    <div class='email'>
+                        <i class="far fa-envelope icons"></i>
+                        <span class="email-name">email</span>
+                    </div>
+        
+                        <div class= 'twitter'>
+                            <i class="fab fa-twitter icons"></i>
+                            <span class="twitter-handle">twitter</span>
+                        </div>
+                 </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

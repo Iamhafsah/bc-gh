@@ -1,0 +1,70 @@
+@media screen and (min-width:1000px){
+
+    .home-page{
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .profile{
+        max-width:20vw
+    }
+    .profile-top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .edit-profile{
+        max-width: 20vw;
+        height: 1.5em;
+    }
+    .repo-section{
+        max-width: 80vw;
+    }
+    .profile img{
+        margin-top: 2em;
+    }
+    .names{
+        margin-top: -1em;
+    }
+    .names span{
+        margin-top: -1em;
+    }
+    .follower-info{
+        font-size: .9em;
+        justify-content: center;
+    }
+    .icons{
+        margin-left: -.3em;
+        margin-right: .1em;
+    }
+    .top-bar{
+        display: flex;
+    }
+    .repos{
+        width: 65vw;
+        margin: 0em;
+    }
+}
+
+@media screen and (min-width:750px){
+    .nav-left{
+        justify-content: flex-start;
+        padding-left: 2em;
+    }
+    .nav-ul{
+        display: flex;
+    }
+    .nav-item{
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app-name{
+        font-size: 3em;
+    }
+    .profile-bottom-div{
+        flex-direction: column-reverse;
+    }
+    .nav-left input{
+        display: none;
+    }
+}

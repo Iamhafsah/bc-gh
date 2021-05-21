@@ -1,0 +1,92 @@
+.header{
+    max-width: 100%;
+    width:  100vw;
+    height: 10vh;
+    color: #ffffff;
+    background-color: #24292e;
+    padding: 0em;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul{
+    display: flex;
+    margin-left: -2em;
+}
+.nav-ul li{
+    color: white;
+    font-size: .9em;
+    font-weight: 500;
+    list-style-type: none;
+    margin-right: 1em;
+    display: none;
+}
+.nav-ul li:hover, .icon:hover{
+    color: grey;
+    cursor: pointer;
+}
+.nav-left, .nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left{
+    /* justify-content: flex-start; */
+    margin-left: -2em;
+}
+
+.nav-right div, .bell-icon{
+    margin-right: .7em;
+}
+.nav-right div{
+    display: flex;
+    align-items: center
+}
+.little-avatar, .repo-count{
+    border-radius: 50%;
+    width: 1.5em;
+}
+.github-icon{
+    font-size: 2em !important;
+    padding-right: .5em;
+    padding-left: 1em;
+}
+.input-container > img {
+   left: -2em;
+   position: relative;
+   top: 5px;
+  }
+.nav-left input{
+    background-color:#24292e;
+    padding: .5em;
+    border: .5px solid grey;
+    border-radius: .4em;
+    width: 20em;
+    transition: all 250ms ease;
+
+}
+.nav-left input:focus{
+    width: 40em;
+    background-color: #fff;
+    outline: none;
+    border-color: rgb(63, 63, 236);
+}
+.nav-right .icon{
+    /* width: 30px; */
+}
+.add-icon, .arrow-icon{
+    font-size: 12.5px;
+}
+.add-icon, .little-avatar{
+    margin-right: .5em;
+}
+.bell-icon, .arrow-icon{
+    margin-right: 1em;
+}
+.nav-left input::placeholder{
+    color: rgb(209, 207, 207);
+}
+@media screen and (max-width:750px){
+    .nav-ul{
+        /* display: none; */
+    }
+}
