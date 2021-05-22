@@ -70,14 +70,15 @@
     outline: none;
     border-color: rgb(63, 63, 236);
 }
-.nav-right .icon{
-    /* width: 30px; */
-}
-.add-icon, .arrow-icon{
+
+ .arrow-icon{
     font-size: 12.5px;
 }
 .add-icon, .little-avatar{
     margin-right: .5em;
+}
+.little-avatar{
+    margin-left: 1em;
 }
 .bell-icon, .arrow-icon{
     margin-right: 1em;

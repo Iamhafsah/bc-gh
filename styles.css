@@ -46,11 +46,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.icons{
-    font-size:  17px;
-    margin-right: .4em;
-    color: rgb(87, 87, 87);
-}
+
 .edit-profile, .search-repo, .repo-type, .repo-language, .new-repo{
     height:2em;
     width:90vw;
@@ -84,4 +80,9 @@ body{
 .headings .icons{
     margin-right: .5em;
     color: #959da5;
+    width: 20px;
+}
+.icons{
+    font-size:  17px;
+    margin-right: .4em;
 }
