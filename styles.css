@@ -10,9 +10,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-}
-.profile{
-    max-width: 30vw;
+    align-items: flex-start;
 }
 .profile-top{
     display: flex;
@@ -25,19 +23,29 @@ body{
     height: 40vh;
     padding: 1em;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #d9d9dd;
 }
 .names{
     font-weight: normal;
 }
 .names span{
     font-size: 1.1em;
+    color: grey;
+    font-weight: 380;
+    margin-left: -2.7em;
+}
+.names h1{
+    margin-left: -2em;
+    margin-bottom: 2px;
 }
 .location, .email, .twitter{
     font-size: .95em;
     display: flex;
     align-items: center;
     margin-bottom: .4em;
+}
+.location-icon, .people-icon{
+    width: 1.2em;
 }
 .dot{
     color: red;
@@ -46,7 +54,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    margin-left: -.9em;
+}
+.follower-info .fa-star, .following{
+    margin-left: .5em;
 }
 .profile-bottom{
     text-align: left;
@@ -59,12 +71,12 @@ body{
 
 /* title styling */
 .titles{
-    border-bottom: 1px solid #d9d9dd;
+    /* border-bottom: 1px solid #d9d9dd; */
     height: 10vh;
 }
 .headings{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: -15em;
 }
@@ -77,10 +89,12 @@ body{
 }
 .headings .icons{
     margin-right: .2em;
-    color: #959da5;
     width: 18px;
 }
-.icons{
+.headings span{
+    cursor: pointer;
+}
+/* .icons{
     font-size:  17px;
     margin-right: .4em;
-}
+} */

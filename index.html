@@ -65,8 +65,8 @@
             <img src="" alt='user avatar' class="user-avatar"/>
 
             <div class='names'>
-                <h1 class='full-name'>Hafsah Emekoma</h1>
-                <span class='login'>hafsy</span>
+                <h1>Hafsah Emekoma</h1>
+                <span>hafsy</span>
             </div>
         </div>
 
@@ -77,17 +77,18 @@
 
             <div class='profile-bottom-div'>
                 <div class='follower-info'>
-                    <i class="fas fa-user-friends"></i>
-                    <span class="followers">{followers} 
-                    </span>
-                    <span class="following">following</span>
-                    <i class="far fa-star icons"></i> {starredRepositories}
+                    <img src="./assets/people-outline.svg" class="people-icon icons" alt="followers">
+                    <span class="followers">32 followers
+                    </span> .
+                    <span class="following">32 following</span> .
+                    <i class="far fa-star icons"></i> 
+                    <span class="starred">34</span>
                  </div>
                  
                  <div>
 
                      <div class='location'>
-                        <i class="fas fa-map-marker-alt icons"></i>
+                       <img src="./assets/location-outline.svg" class="location-icon icons" alt="location icon">
                         <span class="location-name">location</span>
                     </div>
                 
@@ -117,7 +118,7 @@
                     <span>Overview</span>
                 </li>
                 <li>
-                    <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repo icon">
+                    <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repository icon">
                     <span class="repo-text">Repositories</span>
                 </li>
                 <li>
@@ -132,22 +133,29 @@
         </div>
 
         <!-- top bar with repo search and categories -->
-        <div className='top-bar'>
+        <div class='top-bar'>
             <input
             type='text'
             placeholder='Find a repository...'
-            className='search-repo'
+            class='search-repo'
             />
 
-            <select className='repo-type'>
-            <option>Type: All </option>
+            <select class='repo-type'>
+            <option selected >Type</option>
+            <option value="all">All</option>
            </select>
 
-           <select className='repo-language'>
-            <option>Language: All </option>
+           <select class='repo-language'>
+            <option>Language</option>
+            <option value="all">All</option>
            </select>
 
-           <button className='new-repo'>
+           <select class='sort'>
+            <option>Sort</option>
+            <option value="all">All</option>
+           </select>
+
+           <button class='new-repo'>
                <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repo icon"> New</button>
         </div>
     

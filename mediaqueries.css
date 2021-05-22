@@ -9,23 +9,29 @@
     }
     .profile-top{
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     .edit-profile{
-        max-width: 20vw;
+        width: 20vw;
         height: 1.5em;
     }
-    .repo-section{
-        max-width: 80vw;
+    .search-repo, .repo-type, .sort, .repo-language, .new-repo{
+        display: flex;
     }
-    .profile img{
-        margin-top: 2em;
+    .search-repo{
+        width: 50vw;
+    }
+    .repo-section{
+        max-width: 60vw;
+    }
+    .user-avatar{
+        margin-top: 4em;
     }
     .names{
-        margin-top: -1em;
+        text-align: left;
     }
     .names span{
-        margin-top: -1em;
+        margin-top: -2em;
     }
     .follower-info{
         font-size: .9em;
@@ -42,6 +48,7 @@
         width: 65vw;
         margin: 0em;
     }
+    
 }
 
 @media screen and (min-width:750px){

@@ -33,7 +33,20 @@
     /* justify-content: flex-start; */
     margin-left: -2em;
 }
-
+.nav-left input{
+    background-color:#24292e;
+    padding: .5em;
+    border: .5px solid grey;
+    border-radius: .4em;
+    width: 20em;
+    transition: all 250ms ease;
+}
+.nav-left input:focus{
+    width: 40em;
+    background-color: #fff;
+    outline: none;
+    border-color: rgb(63, 63, 236);
+}
 .nav-right div, .bell-icon{
     margin-right: .7em;
 }
@@ -55,30 +68,16 @@
    position: relative;
    top: 5px;
   }
-.nav-left input{
-    background-color:#24292e;
-    padding: .5em;
-    border: .5px solid grey;
-    border-radius: .4em;
-    width: 20em;
-    transition: all 250ms ease;
 
+.icon{
+    font-size: 16px;
 }
-.nav-left input:focus{
-    width: 40em;
-    background-color: #fff;
-    outline: none;
-    border-color: rgb(63, 63, 236);
-}
-
- .arrow-icon{
-    font-size: 12.5px;
-}
-.add-icon, .little-avatar{
-    margin-right: .5em;
+.add-icon{
+    margin-right: .2em;
+    width: 1.5em;
 }
 .little-avatar{
-    margin-left: 1em;
+    margin:auto .5em auto auto;
 }
 .bell-icon, .arrow-icon{
     margin-right: 1em;
