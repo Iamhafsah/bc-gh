@@ -1,0 +1,98 @@
+/* repository styles */
+
+.repos{
+    border-bottom: 1px solid rgb(233, 230, 230);
+    max-width: 90vw;
+    width: 100vw;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    font-size: .95em;
+}
+
+.edit-profile, .search-repo, .repo-type, .repo-language, .new-repo{
+    height:2em;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2em;
+    font-weight: 420;
+    font-size: .95em;
+    background-color: rgb(249, 250, 252);
+    border-radius: .4em;
+    border: 1px solid rgb(233, 230, 230);
+}
+.lang-div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description, .updated-at, .language-name{
+    font-size: .9em !important;
+}
+.language-name{
+    margin-right: 1em;
+}
+.star-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(249, 250, 252);
+    border: 1px solid rgb(233, 230, 230);
+    padding: .3em .5em;
+    border-radius: .4em;
+    font-size: .95em;
+}
+.repo-star-icon{
+    margin-right: .2em;
+}
+.repo-section{
+    display: block;
+}
+.names span{
+    display: block;
+}
+.repo-count{
+    background-color:grey;
+    padding: .2em;
+    margin-left: .5em;
+}
+.icon, .new-repo-icon, .heading-icon, .repo-star-icon{
+    font-size: 1.2em  !important;
+}
+.name-lang{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lang-container, .lang-div{
+    display: flex;
+    align-items: center;
+    margin-top: .5em;
+}
+.repo-icon, .circle-icon, .heading-icon{
+    margin-right: .5em;
+}
+.lang{
+    margin-top: 1em;
+}
+.repo-icon, .dot-icon{
+    color: rgb(126, 126, 126);
+}
+.circle-icon{
+    color: rgb(219, 230, 123);
+}
+.repo-name{
+    color: rgb(14, 86, 241);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.repo{
+    width: 20px;
+}
