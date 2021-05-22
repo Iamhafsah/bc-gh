@@ -78,7 +78,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: -15em;
+    margin-left: -2em;
 }
 .headings li{
     list-style-type: none;
