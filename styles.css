@@ -26,22 +26,32 @@ body{
     height: 17em;
     border-radius: 50%;
     border: 1px solid #d9d9dd;
-    z-index: 10;
     position: relative;
+}
+.circle-wrap{
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    position: absolute;
+    top: 19em;
+    left: 17em;
+    border-radius: 50%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9dd;
 }
 .names{
     font-weight: normal;
     padding-bottom: 1em;
-    /* margin-left: 1em; */
 }
 .names span{
     font-size: 1.1em;
     color: grey;
     font-weight: 380;
-    /* margin-left: -2.7em; */
 }
 .names h1{
-    /* margin-left: -2em; */
     margin-bottom: 2px;
 }
 .location, .email, .twitter{
