@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github</title>
+    <title>Hafsah's github</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -12,154 +12,162 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="repo.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    
-    
-
    
     <script src="https://kit.fontawesome.com/9a8df72958.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
+    <script defer src="script.js" type="module"></script>
 </head>
 <body>
-    <!-- the navbar -->
-    <nav class='header'>
-        <!-- left part of the navbar -->
-        <div class='nav-left'>
-            <i class="fab fa-github github-icon"></i>
+    <form class="sign-in">
+        <input type="text" placeholder="enter username" 
+        required
+        class="input-name" autocomplete="off">
+        <button class="submit">Sign in</button>
+       
+    </form>
 
-            <!-- the search bar -->
-           <div class="input-container">
-                <input type="search" placeholder="Search or jump to..." >
-                <img src="./assets/search-key-slash.svg" alt="search slash image">
-           </div>
-           
-            <ul class='nav-ul'>
-                <li>Pull requests</li>
-                <li>Issues</li>
-                <li>Marketplace</li>
-                <li>Explore</li>
-            </ul>
-        </div>
-
-        <!-- right part of the navbar -->
-        <div class='nav-right'>
-            <i class="far fa-bell bell-icon icon"></i>
-            
-            <div>
-                <img src="./assets/add-outline.svg" class='add-icon icon' alt="add outline">   
-                <i class="fas fa-sort-down arrow-icon icon"></i>   
-            </div>
-
-            <div>
-                <img src="./assets/search-key-slash.svg" alt="user's github avatar" class="little-avatar">
-                <i class="fas fa-sort-down arrow-icon icon"></i> 
-            </div>
-        </div>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- profile details section -->
-    <main class="homepage">
-    <section class='profile'>
-        <!-- the top section of the profile details -->
-        <div class='profile-top'>
-            <img src="" alt='user avatar' class="user-avatar"/>
-
-            <div class='names'>
-                <h1>Hafsah Emekoma</h1>
-                <span>hafsy</span>
-            </div>
-        </div>
-
-        <div class='profile-bottom'>
-            <!-- bottom section of the profile details -->
-             <span class="bio">bio</span>
-             <p class='edit-profile'>Edit profile</p>
-
-            <div class='profile-bottom-div'>
-                <div class='follower-info'>
-                    <img src="./assets/people-outline.svg" class="people-icon icons" alt="followers">
-                    <span class="followers">32 followers
-                    </span> .
-                    <span class="following">32 following</span> .
-                    <i class="far fa-star icons"></i> 
-                    <span class="starred">34</span>
-                 </div>
-                 
-                 <div>
-
-                     <div class='location'>
-                       <img src="./assets/location-outline.svg" class="location-icon icons" alt="location icon">
-                        <span class="location-name">location</span>
-                    </div>
-                
-                    <div class='email'>
-                        <i class="far fa-envelope icons"></i>
-                        <span class="email-name">email</span>
-                    </div>
-        
-                        <div class= 'twitter'>
-                            <i class="fab fa-twitter icons"></i>
-                            <span class="twitter-handle">twitter</span>
-                        </div>
-                 </div>
-          </div>
-        </div>
-    </section>
-
-
-    <!-- repository details -->
-    <section class="repo-section">
-
-        <!-- heading titles -->
-        <div class="titles">
-            <ul class="headings">
-                <li>
-                    <img src="./assets/book-outline.svg" class="book icons" alt="Overview icon"> 
-                    <span>Overview</span>
-                </li>
-                <li>
-                    <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repository icon">
-                    <span class="repo-text">Repositories</span>
-                </li>
-                <li>
-                    <img src="./assets/calendar-outline.svg" class="project icons" alt="projects icon"> 
-                    <span>Projects</span>
-                </li>
-                <li>
-                    <img src="./assets/cube-outline.svg" class="package icons" alt="package icon"> 
-                    <span>Packages</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- top bar with repo search and categories -->
-        <div class='top-bar'>
-            <input
-            type='text'
-            placeholder='Find a repository...'
-            class='search-repo'
-            />
-
-            <select class='repo-type'>
-            <option selected >Type</option>
-            <option value="all">All</option>
-           </select>
-
-           <select class='repo-language'>
-            <option>Language</option>
-            <option value="all">All</option>
-           </select>
-
-           <select class='sort'>
-            <option>Sort</option>
-            <option value="all">All</option>
-           </select>
-
-           <button class='new-repo'>
-               <img src="./assets/bookmarks-outline white.svg" class="repo icons" alt="repo icon"> New</button>
-        </div>
+    <div class="github-page hide">
+        <!-- navbar -->
+        <nav class='header'>
+            <!-- left part of the navbar -->
+            <div class='nav-left'>
+                <i class="fab fa-github github-icon"></i>
     
-    </section>
-</main>
+                <!-- the search bar -->
+               <div class="input-container">
+                    <input type="search" placeholder="Search or jump to..." autocomplete="off" >
+                    <img src="./assets/search-key-slash.svg" alt="search slash image">
+               </div>
+               
+                <ul class='nav-ul'>
+                    <li>Pull requests</li>
+                    <li>Issues</li>
+                    <li>Marketplace</li>
+                    <li>Explore</li>
+                </ul>
+            </div>
+    
+            <!-- right part of the navbar -->
+            <div class='nav-right'>
+                <i class="far fa-bell bell-icon icon"></i>
+                
+                <div>
+                    <img src="./assets/add-outline.svg" class='add-icon icon' alt="add outline">   
+                    <i class="fas fa-sort-down arrow-icon icon"></i>   
+                </div>
+    
+                <div>
+                    <img src="" alt="user's github avatar" class="little-avatar">
+                    <i class="fas fa-sort-down arrow-icon icon"></i> 
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+    
+        <!-- profile details section -->
+        <main class="homepage">
+            <section class='profile'>
+                <!-- the top section of the profile details -->
+                <div class='profile-top'>
+                    <img src="" alt='user avatar' class="user-avatar"/>
+        
+                    <div class='names'>
+                        <h1 class="full-name">Hafsah Emekoma</h1>
+                        <span class="login">hafsy</span>
+                    </div>
+                </div>
+        
+                <div class='profile-bottom'>
+                    <!-- bottom section of the profile details -->
+                    <span class="bio">bio</span>
+                    <p class='edit-profile'>Edit profile</p>
+        
+                    <div class='profile-bottom-div'>
+                        <div class='follower-info'>
+                            <img src="./assets/people-outline.svg" class="people-icon icons" alt="followers">
+                            <span class="followers">32 followers
+                            </span> .
+                            <span class="following">32 following</span> .
+                            <i class="far fa-star icons"></i> 
+                            <span class="starred">34</span>
+                        </div>
+                        
+                        <div>
+        
+                            <div class='location'>
+                            <img src="./assets/location-outline.svg" class="location-icon icons" alt="location icon">
+                                <span class="location-name">location</span>
+                            </div>
+                        
+                            <div class='email'>
+                                <i class="far fa-envelope icons"></i>
+                                <span class="email-name">email</span>
+                            </div>
+                
+                                <div class= 'twitter'>
+                                    <i class="fab fa-twitter icons"></i>
+                                    <span class="twitter-handle">twitter</span>
+                                </div>
+                        </div>
+                </div>
+                </div>
+            </section>
+        
+        
+            <!-- repository details -->
+            <section class="repo-section">
+        
+                <!-- heading titles -->
+                <div class="titles">
+                    <ul class="headings">
+                        <li>
+                            <img src="./assets/book-outline.svg" class="book icons" alt="Overview icon"> 
+                            <span>Overview</span>
+                        </li>
+                        <li>
+                            <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repository icon">
+                            <span class="repo-text">Repositories</span>
+                        </li>
+                        <li>
+                            <img src="./assets/calendar-outline.svg" class="project icons" alt="projects icon"> 
+                            <span>Projects</span>
+                        </li>
+                        <li>
+                            <img src="./assets/cube-outline.svg" class="package icons" alt="package icon"> 
+                            <span>Packages</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- top bar with repo search and categories -->
+                <div class='top-bar'>
+                    <input
+                    type='text'
+                    placeholder='Find a repository...'
+                    class='search-repo'
+                    autocomplete="off"
+                    />
+        
+                    <select class='repo-type'>
+                    <option selected >Type</option>
+                    <option value="all">All</option>
+                </select>
+        
+                <select class='repo-language'>
+                    <option>Language</option>
+                    <option value="all">All</option>
+                </select>
+        
+                <select class='sort'>
+                    <option>Sort</option>
+                    <option value="all">All</option>
+                </select>
+        
+                <button class='new-repo'>
+                    <img src="./assets/bookmarks-outline white.svg" class="repo icons" alt="repo icon">New</button>
+                </div>
+            
+            </section>
+        </main>
+    </div>
 </body>
 </html>
