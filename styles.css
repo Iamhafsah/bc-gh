@@ -18,26 +18,28 @@ body{
 .profile-top{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     text-align: left;
 }
 .profile-top img{
-    width: 20vw;
-    height: 40vh;
+    width: 17em;
+    height: 17em;
     border-radius: 50%;
     border: 1px solid #d9d9dd;
 }
 .names{
     font-weight: normal;
+    padding-bottom: 1em;
+    /* margin-left: 1em; */
 }
 .names span{
     font-size: 1.1em;
     color: grey;
     font-weight: 380;
-    margin-left: -2.7em;
+    /* margin-left: -2.7em; */
 }
 .names h1{
-    margin-left: -2em;
+    /* margin-left: -2em; */
     margin-bottom: 2px;
 }
 .location, .email, .twitter{
@@ -47,7 +49,7 @@ body{
     margin-bottom: .4em;
 }
 .location-icon, .people-icon{
-    width: 1.2em;
+    width: 1.3em;
 }
 .dot{
     color: red;
@@ -56,15 +58,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 2em;
-    margin-left: -.9em;
+    padding-bottom: 1.5em;
+    /* margin-left: -1em; */
 }
 .follower-info .fa-star, .following{
     margin-left: .5em;
 }
 .profile-bottom{
     text-align: left;
-    padding: 1em;
+    /* padding: 1em; */
 }
 .profile-bottom-div{
     display: flex;
@@ -100,3 +102,7 @@ body{
     font-size:  17px;
     margin-right: .4em;
 } */
+.fa-star, .fa-envelope, .fa-twitter{
+    color: grey;
+    font-size: 1em;
+}

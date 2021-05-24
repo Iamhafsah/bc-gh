@@ -21,6 +21,7 @@
     background-color: rgb(249, 250, 252);
     height: 2.5em;
     margin-left: .3em;
+    cursor: pointer;
 }
 .edit-profile, .search-repo, .repo-type, .sort, .repo-language, .new-repo{
     display: flex;
@@ -31,7 +32,6 @@
     font-size: .9em;
     border-radius: .4em;
     border: 1px solid rgb(233, 230, 230);
-    cursor: pointer;
 }
 .new-repo{
     background-color: #2ea44f;
@@ -41,6 +41,11 @@
     margin-left: 1em;
     padding-right:1em ;
     padding-left: 1em;
+    transition: background-color 250ms ease;
+    cursor: pointer;
+}
+.new-repo:hover{
+    background-color: #2a8f47;
 }
 .search-repo{
     margin-right: .5em;

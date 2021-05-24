@@ -18,7 +18,7 @@
     font-weight: 500;
     list-style-type: none;
     margin-right: 1em;
-    display: none;
+    /* display: none; */
 }
 .nav-ul li:hover, .icon:hover{
     color: grey;
