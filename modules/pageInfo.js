@@ -12,6 +12,7 @@ const twitterHandle = document.querySelector('.twitter-handle')
 const email= document.querySelector('.email')
 const twitter= document.querySelector('.twitter') 
 const location = document.querySelector('.location') 
+const repoCount = document.querySelector('.repo-count')
 
 
 
@@ -48,6 +49,8 @@ const pageInfo = (user) => {
     
     
     user.twitterUsername === null ? twitter.style.display = 'none': twitterHandle.innerHTML = user.twitterUsername;
+
+    repoCount.innerHTML = user.repositories.totalCount;
 }
 
 export default pageInfo

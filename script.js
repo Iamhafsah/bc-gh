@@ -1,5 +1,6 @@
 import pageInfo from './modules/pageInfo.js'
 import profile from './modules/query.js'
+import repoInfo from './modules/repoInfo.js'
 
 const inputName = document.querySelector('.input-name');
 const form = document.querySelector('.sign-in');
@@ -27,9 +28,10 @@ let getUserInfo = (e) => {
     .then((data) => {
         let info = data.data.user
         console.log(info);
-        // info.repositories.edges.map(repo=> {
-        //     repo.node.primaryLanguage ? console.log(repo.node.primaryLanguage.color) : console.log('none')
-        // })
+        info.repositories.edges.map(repo=> {
+            repoInfo(repo)
+            // repo.node.primaryLanguage ? console.log(repo.node.primaryLanguage.color) : console.log('none')
+        })
         if (info === null){
             alert(`Please confirm that input ${profileName} is correct`)
         }else{

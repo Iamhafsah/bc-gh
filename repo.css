@@ -2,8 +2,7 @@
 
 .repos{
     border-bottom: 1px solid rgb(233, 230, 230);
-    max-width: 90vw;
-    width: 100vw;
+    /* max-width: 68vw; */
     margin: 1em;
     display: flex;
     justify-content: space-between;
@@ -49,6 +48,7 @@
 }
 .search-repo{
     margin-right: .5em;
+    outline-color: rgb(150, 150, 250);
 }
 .search-repo, .repo-type, .repo-language, .new-repo, .sort{
     display: none;
@@ -61,6 +61,9 @@
 .description, .updated-at, .language-name{
     font-size: .9em !important;
 }
+.star-count-div{
+    margin-right: 1em;
+}
 .language-name{
     margin-right: 1em;
 }
@@ -70,20 +73,20 @@
     align-items: center;
     background-color: rgb(249, 250, 252);
     border: 1px solid rgb(233, 230, 230);
-    padding: .3em .5em;
+    padding: .3em .8em;
     border-radius: .4em;
     font-size: .95em;
+    cursor: pointer;
 }
-.repo-star-icon{
-    margin-right: .2em;
-}
-.repo-section, .names sp{
+.repo-section{
     display: block;
 }
 .repo-count{
-    background-color:grey;
-    padding: .2em;
+    background-color:rgb(233, 230, 230);
+    padding: .4em;
     margin-left: .5em;
+    font-size: .8em;
+    font-weight: bold;
 }
 .name-lang{
     display: flex;
@@ -97,6 +100,13 @@
     margin-top: .5em;
 }
 .circle-icon, .heading-icon{
+    margin-right: .5em;
+}
+.circle-color{
+    width: 1em;
+    height: 1em;
+    /* background-color: red; */
+    border-radius: 50%;
     margin-right: .5em;
 }
 .lang{
@@ -114,5 +124,55 @@
     font-weight: bold;
 }
 .repo{
-    width: 20px;
+    width: 18px;
+}
+.repo-url{
+    text-decoration: none;
+}
+.repo-url:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(14, 86, 241);;
+}
+.top-bar{
+    border-bottom: 1px solid rgb(233, 230, 230);
+    padding-bottom: 1em;
+}
+
+/* title part styling */
+.headings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -3em;
+    margin-top: 2em;
+}
+.headings li{
+    list-style-type: none;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+.overview-li, .project-li, .packages-li{
+    padding-bottom: 1.1em;
+    border-bottom: 2px solid white;
+}
+.repo-li{
+    padding-bottom: .7em;
+    border-bottom: 2px solid rgb(231, 90, 34);
+} 
+.overview-li:hover, .project-li:hover, .packages-li:hover{
+    border-bottom: 2px solid rgb(211, 210, 210);
+}
+.headings .icons{
+    margin-right: .2em;
+    width: 18px;
+}
+.headings span{
+    cursor: pointer;
+}
+.repo-text{
+    font-weight: 420;
 }

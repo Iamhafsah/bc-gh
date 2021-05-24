@@ -26,6 +26,7 @@ const profile = (profileName)=> {
                         url
                         descriptionHTML
                         updatedAt
+                        stargazerCount
                         primaryLanguage{
                             name
                             color

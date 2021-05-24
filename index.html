@@ -62,13 +62,20 @@
             </div>
         </nav>
         <!-- end of navbar -->
-    
+
+        <!-- the line that goes through the page -->
+        <div class="overlapping-line"></div>
+        
         <!-- profile details section -->
         <main class="homepage">
+
             <section class='profile'>
                 <!-- the top section of the profile details -->
                 <div class='profile-top'>
-                    <img src="" alt='user avatar' class="user-avatar"/>
+                   <div>
+                        <img src="" alt='user avatar' class="user-avatar"/>
+                        <i class="far fa-smile"></i>
+                   </div>
         
                     <div class='names'>
                         <h1 class="full-name">Hafsah Emekoma</h1>
@@ -119,19 +126,20 @@
                 <!-- heading titles -->
                 <div class="titles">
                     <ul class="headings">
-                        <li>
+                        <li class="overview-li">
                             <img src="./assets/book-outline.svg" class="book icons" alt="Overview icon"> 
                             <span>Overview</span>
                         </li>
-                        <li>
+                        <li class="repo-li">
                             <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repository icon">
                             <span class="repo-text">Repositories</span>
+                            <span class="repo-count"></span>
                         </li>
-                        <li>
+                        <li class="project-li">
                             <img src="./assets/calendar-outline.svg" class="project icons" alt="projects icon"> 
                             <span>Projects</span>
                         </li>
-                        <li>
+                        <li class="project-li">
                             <img src="./assets/cube-outline.svg" class="package icons" alt="package icon"> 
                             <span>Packages</span>
                         </li>
@@ -166,6 +174,9 @@
                     <img src="./assets/bookmarks-outline white.svg" class="repo icons" alt="repo icon">New</button>
                 </div>
             
+                <div class="repo-container">
+                    <!-- repository information is displayed here -->
+                </div>
             </section>
         </main>
     </div>
