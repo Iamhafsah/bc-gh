@@ -84,8 +84,3 @@
 .nav-left input::placeholder{
     color: rgb(209, 207, 207);
 }
-@media screen and (max-width:750px){
-    .nav-ul{
-        /* display: none; */
-    }
-}

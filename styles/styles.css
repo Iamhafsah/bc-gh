@@ -15,6 +15,10 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
+.profile{
+    max-width: 90vw;
+    margin: auto;
+}
 .profile-top{
     display: flex;
     justify-content: flex-start;
@@ -26,7 +30,7 @@ body{
     border-radius: 50%;
     border: 1px solid #d9d9dd;
     position: relative;
-    margin: .5em 1em 1em ;
+    margin: .5em 1em 1em -1em;
 }
 .circle-wrap{
     width: 2em;
@@ -105,16 +109,4 @@ body{
 .website-name:hover, .twitter-handle:hover{
     color: rgb(14, 86, 241);
     text-decoration: underline;
-}
-/* .overlapping-line{
-    width: 100%;
-    height: 1px;
-    background-color:   rgb(233, 230, 230);
-    position: absolute;
-    top: 8.2em;
-    top: 16vh;
-} */
-.profile{
-    max-width: 90vw;
-    margin: auto;
 }

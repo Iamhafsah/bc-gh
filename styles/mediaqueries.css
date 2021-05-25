@@ -17,6 +17,7 @@
         margin-top: 2.5em;
         width: 100%;
         margin-bottom: -1em;
+        margin-left: 1em;
     }
     .edit-profile{
         width: 20vw;
@@ -91,8 +92,5 @@
 @media screen and (max-width: 854px) {
     .profile-bottom-div{
         flex-direction: column-reverse;
-    }
-    .nav-left input{
-        /* display: none; */
     }
 }
