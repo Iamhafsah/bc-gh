@@ -9,7 +9,7 @@ body{
 .hide{
     display: none;
 }
-.homepage{
+.page-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +22,11 @@ body{
     text-align: left;
 }
 .profile-top img{
-    width: 17em;
-    height: 17em;
+    width: 20%;
     border-radius: 50%;
     border: 1px solid #d9d9dd;
     position: relative;
+    margin: .5em 1em 1em ;
 }
 .circle-wrap{
     width: 2em;
@@ -36,11 +36,10 @@ body{
     top: 19em;
     left: 17em;
     border-radius: 50%;
-    z-index: 20;
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #d9d9dd;
+    display: none;
 }
 .names{
     font-weight: normal;
@@ -54,11 +53,14 @@ body{
 .names h1{
     margin-bottom: 2px;
 }
-.location, .email, .twitter{
+.location, .email, .twitter, .website{
     font-size: .95em;
     display: flex;
     align-items: center;
     margin-bottom: .4em;
+}
+.location, .twitter{
+    display: none;
 }
 .location-icon, .people-icon{
     width: 1.3em;
@@ -68,28 +70,51 @@ body{
     align-items: center;
     justify-content: flex-start;
     padding-bottom: 1.5em;
-    /* margin-left: -1em; */
+}
+.follower-info p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .follower-info .fa-star, .following{
     margin-left: .5em;
 }
+.follower-info span, .follower-info i{
+    cursor: pointer;
+}
+.follower-info span:hover, .follower-info i:hover{
+    color: rgb(14, 86, 241);;
+}
 .profile-bottom{
     text-align: left;
-    /* padding: 1em; */
 }
 .profile-bottom-div{
     display: flex;
     flex-direction: column;
 }
 
-.fa-star, .fa-envelope, .fa-twitter{
+.fa-star, .fa-envelope, .fa-twitter, .fa-link {
     color: grey;
     font-size: 1em;
 }
-.overlapping-line{
+.website-name, .twitter-handle{
+    color: inherit;
+    text-decoration: none;
+    transition: color 250ms ease;
+}
+.website-name:hover, .twitter-handle:hover{
+    color: rgb(14, 86, 241);
+    text-decoration: underline;
+}
+/* .overlapping-line{
     width: 100%;
     height: 1px;
     background-color:   rgb(233, 230, 230);
     position: absolute;
     top: 8.2em;
+    top: 16vh;
+} */
+.profile{
+    max-width: 90vw;
+    margin: auto;
 }

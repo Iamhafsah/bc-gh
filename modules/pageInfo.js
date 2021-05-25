@@ -8,8 +8,10 @@ const following = document.querySelector('.following')
 const starred = document.querySelector('.starred')
 const locationName = document.querySelector('.location-name')
 const emailName = document.querySelector('.email-name')
+const websiteName = document.querySelector('.website-name')
 const twitterHandle = document.querySelector('.twitter-handle')
 const email= document.querySelector('.email')
+const website= document.querySelector('.website')
 const twitter= document.querySelector('.twitter') 
 const location = document.querySelector('.location') 
 const repoCount = document.querySelector('.repo-count')
@@ -45,10 +47,12 @@ const pageInfo = (user) => {
 
     user.email === "" ? email.style.display = 'none' : null;
     emailName.innerHTML = user.email;
-    twitterHandle.innerHTML = user.twitterUsername ;
     
+    user.websiteUrl === null ? website.style.display = 'none' : websiteName.innerHTML = user.websiteUrl;
+    websiteName.href= user.websiteUrl;
     
-    user.twitterUsername === null ? twitter.style.display = 'none': twitterHandle.innerHTML = user.twitterUsername;
+    user.twitterUsername === null ? twitter.style.display = 'none': twitterHandle.innerHTML = ` @${user.twitterUsername}`;
+    twitterHandle.href = `https://twitter.com/${user.twitterUsername}`
 
     repoCount.innerHTML = user.repositories.totalCount;
 }

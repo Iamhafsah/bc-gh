@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 .nav-ul{
-    display: flex;
+    display: none;
     margin-left: -2em;
 }
 .nav-ul li{
@@ -18,7 +18,7 @@
     font-weight: 500;
     list-style-type: none;
     margin-right: 1em;
-    /* display: none; */
+    display: none;
 }
 .nav-ul li:hover, .icon:hover{
     color: grey;
@@ -30,7 +30,6 @@
     align-items: center;
 }
 .nav-left{
-    /* justify-content: flex-start; */
     margin-left: -2em;
 }
 .nav-left input{
@@ -67,7 +66,7 @@
    left: -2em;
    position: relative;
    top: 5px;
-  }
+}
 
 .icon{
     font-size: 16px;

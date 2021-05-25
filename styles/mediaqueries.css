@@ -1,31 +1,43 @@
-@media screen and (min-width:1000px){
 
-    .homepage{
+@media screen and (min-width:854px){
+    .page-container{
         flex-direction: row;
         justify-content:space-around;
     }
     .profile{
-        max-width:20vw
+        max-width:20vw;
+        margin: 0;
+        position: relative;
+        top: -4em;
     }
     .profile-top{
         flex-direction: column;
-        text-align: left;
+    }
+    .profile-top img{
+        margin-top: 2.5em;
+        width: 100%;
+        margin-bottom: -1em;
     }
     .edit-profile{
         width: 20vw;
         height: 1.5em;
+    }
+    .twitter, .location{
+        display: block;
     }
     .search-repo, .repo-type, .sort, .repo-language, .new-repo{
         display: flex;
     }
     .search-repo{
         width: 50vw;
+        margin-bottom: 0;
     }
     .repo-section{
         max-width: 65vw;
+        margin: 0;
     }
-    .user-avatar{
-        margin-top: 2.5em;
+    .circle-wrap{
+        display: flex;
     }
     .names{
         text-align: left;
@@ -41,6 +53,9 @@
         margin-left: -.3em;
         margin-right: .1em;
     }
+    .titles{
+        display: flex;
+    }
     .top-bar{
         display: flex;
     }
@@ -48,30 +63,36 @@
         width: 65vw;
         margin: 0em;
     }
-    
+    .search-repo{
+        margin-right: .5em;
+    }
+    .nav-ul{
+        display: flex;
+    }
+    /* .nav-left input, .input-container > img{
+        display: block;
+    } */
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:770px){
     .nav-left{
         justify-content: flex-start;
         padding-left: 2em;
     }
-    .nav-ul{
-        display: flex;
+    
+    .nav-ul li{
+        display: block;
     }
     .nav-item{
         margin-right: 1em;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .app-name{
-        font-size: 3em;
-    }
+@media screen and (max-width: 854px) {
     .profile-bottom-div{
         flex-direction: column-reverse;
     }
     .nav-left input{
-        display: none;
+        /* display: none; */
     }
 }

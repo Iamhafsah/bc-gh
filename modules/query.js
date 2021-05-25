@@ -7,6 +7,7 @@ const profile = (profileName)=> {
                 login
                 location
                 avatarUrl
+                websiteUrl
                 twitterUsername
                 email
                 starredRepositories{

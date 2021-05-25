@@ -4,6 +4,7 @@ import repoInfo from './modules/repoInfo.js'
 
 const inputName = document.querySelector('.input-name');
 const form = document.querySelector('.sign-in');
+const formContainer = document.querySelector('.login-form')
 const github = document.querySelector('.github-page')
 
 
@@ -27,17 +28,15 @@ let getUserInfo = (e) => {
     .then(response => response.json())
     .then((data) => {
         let info = data.data.user
-        console.log(info);
-        info.repositories.edges.map(repo=> {
-            repoInfo(repo)
-            // repo.node.primaryLanguage ? console.log(repo.node.primaryLanguage.color) : console.log('none')
-        })
         if (info === null){
-            alert(`Please confirm that input ${profileName} is correct`)
+            alert(`Please confirm that ${profileName} is a valid username`)
         }else{
             github.classList.remove('hide')
-            form.classList.add('hide')
+            formContainer.classList.add('hide')
             pageInfo(info)
+            info.repositories.edges.map(repo=> {
+                repoInfo(repo)
+            })
         }
     })
 }
