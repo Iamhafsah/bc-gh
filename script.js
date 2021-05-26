@@ -1,7 +1,7 @@
 // modules imported from the modules folder
-import pageInfo from './modules/pageInfo.js'
-import profile from './modules/query.js'
-import repoInfo from './modules/repoInfo.js'
+import pageInfo from './jsmodules/pageInfo.js'
+import profile from './jsmodules/query.js.js'
+import repoInfo from './jsmodules/repoInfo.js'
 
 
 const inputName = document.querySelector('.input-name');
