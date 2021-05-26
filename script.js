@@ -31,6 +31,7 @@ let getUserInfo = (e) => {
         let info = data.data.user
         if (info === null){
             alert(`Please confirm that ${profileName} is a valid username`)
+            form.reset()
         }else{
             github.classList.remove('hide')
             formContainer.classList.add('hide')
