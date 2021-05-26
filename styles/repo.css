@@ -69,10 +69,10 @@
 }
 .repo-left > div{
     color: #586069;
-    font-size: .9em
+    font-size: .93em
 }
-.repo-left .description, .updated-at, .language-name{
-    font-size: .9em !important;
+.updated-at, .language-name{
+    font-size: .85em !important;
     color: #586069;
 }
 .star-count-div{
@@ -165,9 +165,9 @@
 
 /* title part styling */
 .titles{
-    overflow-x: auto;
     border-bottom: 1px solid rgb(233, 230, 230);
     max-height: 4.25em;
+    overflow: hidden;
     justify-content: flex-start;
     align-items: flex-start;
     display: none;
@@ -189,16 +189,15 @@
     padding-left: 1em;
     padding-right: 1.5em;
 }
-.overview-li, .project-li, .packages-li{
-    padding-bottom: 1.15em;
-    border-bottom: 2px solid white;
+.mobile-headings{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-left: -3em;
+    border-bottom: 1px solid rgb(233, 230, 230);
+    margin-top: 0;
 }
-.repo-li{
-    padding-bottom: .75em;
-    border-bottom: 2px solid rgb(231, 90, 34);
-} 
-.overview-li:hover, .project-li:hover, .packages-li:hover{
-    border-bottom: 2px solid rgb(211, 210, 210);
+.mobile-headings::-webkit-scrollbar{
+    display: none;
 }
 .headings .icons{
     margin-right: .2em;
@@ -210,3 +209,15 @@
 .repo-text{
     font-weight: 420;
 }
+.overview-li, .project-li, .packages-li{
+    padding-bottom: 1.15em;
+    border-bottom: 2px solid white;
+}
+.repo-li{
+    padding-bottom: .75em;
+    border-bottom: 2px solid rgb(231, 90, 34);
+} 
+.overview-li:hover, .project-li:hover, .packages-li:hover{
+    border-bottom: 2px solid rgb(211, 210, 210);
+}
+

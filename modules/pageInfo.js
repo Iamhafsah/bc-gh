@@ -3,9 +3,7 @@ const littleAvatar = document.querySelector('.little-avatar')
 const userAvatar = document.querySelector('.user-avatar')
 const fullName = document.querySelector('.full-name')
 const bio = document.querySelector('.bio')
-const followers = document.querySelector('.followers')
-const following = document.querySelector('.following')
-const starred = document.querySelector('.starred')
+const followerDetails = document.querySelector('.follower-details')
 const locationName = document.querySelector('.location-name')
 const emailName = document.querySelector('.email-name')
 const websiteName = document.querySelector('.website-name')
@@ -15,6 +13,7 @@ const website= document.querySelector('.website')
 const twitter= document.querySelector('.twitter') 
 const location = document.querySelector('.location') 
 const repoCount = document.querySelector('.repo-count')
+const mobileRepoCount = document.querySelector('.mobile-repo-count')
 
 
 
@@ -31,7 +30,6 @@ const pageInfo = (user) => {
     : (user.followers.totalCount > 1000000) 
     ? `${(user.followers.totalCount/1000000).toFixed(1)}M` 
     : user.followers.totalCount;
-    followers.innerHTML = `${followerCount} followers`;
 
     // checking if the following count user is in thousands or millions
     let followingCount = (user.following.totalCount > 999  && user.followers.totalCount < 1000000)
@@ -39,9 +37,8 @@ const pageInfo = (user) => {
     : (user.followers.totalCount > 1000000) 
     ? `${(user.followers.totalCount/1000000).toFixed(1)}M` 
     : user.following.totalCount;
-    following.innerHTML = `${followingCount} following`;
-   
-    starred.innerHTML = user.starredRepositories.totalCount;
+
+    followerDetails.innerHTML = `<img src="../assets/people-outline.svg" class="people-icon icons" alt="followers"> <span class="followers">${followerCount} followers </span> . <span class="following"> ${followingCount} following</span> . <i class="far fa-star icons"></i> <span>${user.starredRepositories.totalCount}</span>`
 
     user.location === null ? location.style.display = 'none': locationName.innerHTML = user.location;
 
@@ -55,6 +52,7 @@ const pageInfo = (user) => {
     twitterHandle.href = `https://twitter.com/${user.twitterUsername}`
 
     repoCount.innerHTML = user.repositories.totalCount;
+    mobileRepoCount.innerHTML = user.repositories.totalCount;
 }
 
 export default pageInfo

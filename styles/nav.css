@@ -9,8 +9,8 @@
     justify-content: space-between;
 }
 .nav-ul{
-    display: none;
     margin-left: -2em;
+    display: flex;
 }
 .nav-ul li{
     color: white;
@@ -18,19 +18,20 @@
     font-weight: 500;
     list-style-type: none;
     margin-right: 1em;
-    display: none;
 }
 .nav-ul li:hover, .icon:hover{
     color: grey;
     cursor: pointer;
 }
 .nav-left, .nav-right{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 .nav-left{
     margin-left: -2em;
+    justify-content: flex-start;
+    padding-left: 2em;
 }
 .nav-left input{
     background-color:#24292e;
@@ -51,7 +52,7 @@
 }
 .nav-right div{
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .little-avatar, .repo-count{
     border-radius: 50%;
@@ -83,4 +84,14 @@
 }
 .nav-left input::placeholder{
     color: rgb(209, 207, 207);
+}
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu-bar{
+    font-size: 1.5em;
+    padding-left: 1em;
 }

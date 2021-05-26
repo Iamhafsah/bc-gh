@@ -18,6 +18,7 @@
     <script defer src="script.js" type="module"></script>
 </head>
 <body>
+    <!-- log in form -->
     <div class="login-form">
         <div class="intro">
             <i class="fab fa-github github-logo"></i>
@@ -68,6 +69,16 @@
                     <img src="" alt="user's github avatar" class="little-avatar">
                     <i class="fas fa-sort-down arrow-icon icon"></i> 
                 </div>
+            </div>
+
+            <!-- mobile nav -->
+            <div class="mobile-nav">
+                <i class="fas fa-bars menu-bar"></i>
+                
+                <i class="fab fa-github github-icon"></i>
+
+                <i class="far fa-bell bell-icon icon"></i>
+
             </div>
         </nav>
         <!-- end of navbar -->
@@ -121,13 +132,7 @@
         
                     <div class='profile-bottom-div'>
                         <div class='follower-info'>
-                            <p>
-                                <img src="./assets/people-outline.svg" class="people-icon icons" alt="followers">
-                                <span class="followers">32 followers
-                                </span> .
-                                <span class="following">32 following</span> .
-                                <i class="far fa-star icons"></i> 
-                                <span class="starred">34</span>
+                            <p class="follower-details">
                             </p>
                         </div>
                         
@@ -161,6 +166,26 @@
         
             <!-- repository details -->
             <section class="repo-section">
+
+                <ul class="mobile-headings headings">
+                    <li class="overview-li">
+                        <img src="./assets/book-outline.svg" class="book icons" alt="Overview icon"> 
+                        <span>Overview</span>
+                    </li>
+                    <li class="repo-li">
+                        <img src="./assets/bookmarks-outline.svg" class="repo icons" alt="repository icon">
+                        <span class="repo-text">Repositories</span>
+                        <span class="repo-count mobile-repo-count"></span>
+                    </li>
+                    <li class="project-li">
+                        <img src="./assets/calendar-outline.svg" class="project icons" alt="projects icon"> 
+                        <span>Projects</span>
+                    </li>
+                    <li class="project-li">
+                        <img src="./assets/cube-outline.svg" class="package icons" alt="package icon"> 
+                        <span>Packages</span>
+                    </li>
+                </ul>
         
                 <!-- top bar with repo search and categories -->
                 <div class='top-bar'>

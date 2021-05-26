@@ -30,20 +30,7 @@ body{
     border-radius: 50%;
     border: 1px solid #d9d9dd;
     position: relative;
-    margin: .5em 1em 1em -1em;
-}
-.circle-wrap{
-    width: 2em;
-    height: 2em;
-    background-color: white;
-    position: absolute;
-    top: 19em;
-    left: 17em;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #d9d9dd;
-    display: none;
+    margin: .5em 1em 1em -.1em;
 }
 .names{
     font-weight: normal;
@@ -58,7 +45,6 @@ body{
     margin-bottom: 2px;
 }
 .location, .email, .twitter, .website{
-    font-size: .95em;
     display: flex;
     align-items: center;
     margin-bottom: .4em;
@@ -68,26 +54,31 @@ body{
 }
 .location-icon, .people-icon{
     width: 1.3em;
+    position: relative;
+    top: .3em;
+}
+.location-icon{
+    left: -.2em;
+    width: 1.2em;
 }
 .follower-info{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
+    margin-top: -1.2em;
 }
 .follower-info p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 14px;
 }
 .follower-info .fa-star, .following{
-    margin-left: .5em;
+    margin-left: .3em;
 }
 .follower-info span, .follower-info i{
     cursor: pointer;
 }
 .follower-info span:hover, .follower-info i:hover{
-    color: rgb(14, 86, 241);;
+    color: rgb(14, 86, 241);
 }
 .profile-bottom{
     text-align: left;
@@ -95,6 +86,8 @@ body{
 .profile-bottom-div{
     display: flex;
     flex-direction: column;
+    color: #586069;
+    font-size: 14px;
 }
 
 .fa-star, .fa-envelope, .fa-twitter, .fa-link {

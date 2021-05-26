@@ -1,8 +1,11 @@
 
-@media screen and (min-width:854px){
+@media screen and (min-width:800px){
     .page-container{
         flex-direction: row;
         justify-content:space-around;
+    }
+    .nav-right, .nav-left{
+        display: flex;
     }
     .profile{
         max-width:20vw;
@@ -37,9 +40,6 @@
         max-width: 65vw;
         margin: 0;
     }
-    .circle-wrap{
-        display: flex;
-    }
     .names{
         text-align: left;
     }
@@ -67,30 +67,22 @@
     .search-repo{
         margin-right: .5em;
     }
-    .nav-ul{
-        display: flex;
+    .mobile-headings{
+        display: none;
     }
-    /* .nav-left input, .input-container > img{
-        display: block;
-    } */
-}
-
-@media screen and (min-width:770px){
-    .nav-left{
-        justify-content: flex-start;
-        padding-left: 2em;
-    }
-    
-    .nav-ul li{
-        display: block;
-    }
-    .nav-item{
-        margin-right: 1em;
+    .mobile-nav{
+        display: none;
     }
 }
 
-@media screen and (max-width: 854px) {
+
+@media screen and (max-width: 800px) {
     .profile-bottom-div{
         flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:870px){
+    .nav-ul{
+        display: none;
     }
 }
