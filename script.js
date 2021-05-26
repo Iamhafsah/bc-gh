@@ -1,6 +1,8 @@
+// modules imported from the modules folder
 import pageInfo from './modules/pageInfo.js'
 import profile from './modules/query.js'
 import repoInfo from './modules/repoInfo.js'
+
 
 const inputName = document.querySelector('.input-name');
 const form = document.querySelector('.sign-in');
@@ -8,8 +10,7 @@ const formContainer = document.querySelector('.login-form')
 const github = document.querySelector('.github-page')
 
 
-const token = 'b8c04bffea14744396e8ac2661b6a704f8410524'
-
+import {token} from './tk.js'
 
 let getUserInfo = (e) => {
     e.preventDefault()

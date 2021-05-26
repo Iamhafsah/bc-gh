@@ -1,4 +1,4 @@
-
+/* media queries for all pages */
 @media screen and (min-width:800px){
     .page-container{
         flex-direction: row;
