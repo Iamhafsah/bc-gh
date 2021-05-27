@@ -91,7 +91,10 @@
     }
     .login-form{
         padding: 1em;
-        max-width: 70vw;
+        max-width: 80vw;
+    }
+    .sign-in{
+        margin-left: -.5em;
     }
 }
 @media screen and (max-width:870px){
