@@ -2,13 +2,11 @@
 
 .repos{
     border-bottom: 1px solid rgb(233, 230, 230);
-    /* max-width: 68vw; */
     margin: 1em;
     display: flex;
     justify-content: space-between;
     align-items:center;
     text-align: left;
-    /* padding-top: 1em; */
     padding-bottom: 1em;
     font-size: .95em;
 }
@@ -56,8 +54,7 @@
     background-color: #2a8f47;
 }
 .search-repo{
-    /* margin-right: .5em; */
-    outline-color: rgb(150, 150, 250);
+    outline-color: #79b8ff;
 }
 .lang-div div{
     display: flex;
@@ -125,7 +122,6 @@
 .circle-color{
     width: 1em;
     height: 1em;
-    /* background-color: red; */
     border-radius: 50%;
     margin-right: .5em;
 }

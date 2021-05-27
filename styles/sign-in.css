@@ -26,7 +26,7 @@
 .sign-in input{
     margin: 2em  1em;
     border: 1px solid rgb(190, 190, 190);
-    outline-color: rgb(150, 150, 250);
+    outline-color: #79b8ff;
     width: 30vw;
 }
 .sign-in input::placeholder{
