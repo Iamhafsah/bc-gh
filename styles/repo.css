@@ -190,7 +190,7 @@
     scroll-behavior: smooth;
     margin-left: -3em;
     border-bottom: 1px solid rgb(233, 230, 230);
-    margin-top: 0;
+    margin-top: 1em;
 }
 .mobile-headings::-webkit-scrollbar{
     display: none;

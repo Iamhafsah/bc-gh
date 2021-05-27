@@ -1,11 +1,20 @@
 /* media queries for all pages */
 @media screen and (min-width:800px){
+    .sign-in input{
+        max-width: 30vw;
+    }
+    .sign-in button{
+        max-width: 20vw;
+    }
     .page-container{
         flex-direction: row;
         justify-content:space-around;
     }
     .nav-right, .nav-left{
         display: flex;
+    }
+    .github-icon{
+        padding-left: 1em;
     }
     .profile{
         max-width:20vw;
@@ -79,6 +88,10 @@
 @media screen and (max-width: 800px) {
     .profile-bottom-div{
         flex-direction: column-reverse;
+    }
+    .login-form{
+        padding: 1em;
+        max-width: 70vw;
     }
 }
 @media screen and (max-width:870px){
