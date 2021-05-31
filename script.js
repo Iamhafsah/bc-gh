@@ -7,12 +7,13 @@ const inputName = document.querySelector('.input-name');
 const form = document.querySelector('.sign-in');
 const formContainer = document.querySelector('.login-form')
 const github = document.querySelector('.github-page')
-
+const submit = document.querySelector('.submit')
 
 let getUserInfo = (e) => {
     e.preventDefault()
     const profileName = inputName.value;
-    
+    submit.innerHTML = 'Fetching user data...'
+
     fetch(`https://hafsahs-github.netlify.app/.netlify/functions/graphql-query/?profileName="${profileName}"`)
     .then(response => response.json())
     .then((data) => {
