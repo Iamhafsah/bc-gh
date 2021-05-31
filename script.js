@@ -17,7 +17,6 @@ let getUserInfo = (e) => {
     .then(response => response.json())
     .then((data) => {
         let info = data.data.user
-
         if (info === null){
             alert(`Please confirm that ${profileName} is a valid username`)
             form.reset()
