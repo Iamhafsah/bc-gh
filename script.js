@@ -13,7 +13,7 @@ let getUserInfo = (e) => {
     e.preventDefault()
     const profileName = inputName.value;
     
-    fetch(`https://gh-try.netlify.app/.netlify/functions/graphql-query/?profileName="${profileName}"`)
+    fetch(`https://hafsahs-github.netlify.app/.netlify/functions/graphql-query/?profileName="${profileName}"`)
     .then(response => response.json())
     .then((data) => {
         let info = data.data.user
