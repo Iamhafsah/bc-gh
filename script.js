@@ -29,6 +29,7 @@ let getUserInfo = (e) => {
             })
         }
     })
+    .catch(error => console.log(error))
 }
 
 form.addEventListener('submit', getUserInfo);

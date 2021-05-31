@@ -57,8 +57,8 @@ exports.handler = function(event, context, callback) {
 .then(response => response.json())
 .then(data => {
     callback(null, {
-        statusCode: 200,
         headers,
+        statusCode: 200,
         body: JSON.stringify(data)
     })
 })
