@@ -1,0 +1,22 @@
+{
+  "name": "bc-github",
+  "version": "1.0.0",
+  "description": "A github repository page clone",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamhafsah/bc-gh.git"
+  },
+  "author": "Hafsah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamhafsah/bc-gh/issues"
+  },
+  "homepage": "https://github.com/Iamhafsah/bc-gh#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
