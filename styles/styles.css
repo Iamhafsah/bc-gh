@@ -31,7 +31,6 @@ body{
     width: 20%;
     border-radius: 50%;
     border: 1px solid #d9d9dd;
-    position: relative;
     margin: .5em 1em 1em -.1em;
 }
 .names{
