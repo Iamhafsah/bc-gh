@@ -16,19 +16,18 @@ let getUserInfo = (e) => {
     fetch(`https://gh-try.netlify.app/.netlify/functions/graphql-query/?profileName="${profileName}"`)
     .then(response => response.json())
     .then((data) => {
-        console.log(data);
-        // let info = data.data.user
-        // if (info === null){
-        //     alert(`Please confirm that ${profileName} is a valid username`)
-        //     form.reset()
-        // }else{
-        //     github.classList.remove('hide')
-        //     formContainer.classList.add('hide')
-        //     pageInfo(info)
-        //     info.repositories.edges.map(repo=> {
-        //         repoInfo(repo)
-        //     })
-        // }
+        let info = data.data.user
+        if (info === null){
+            alert(`Please confirm that ${profileName} is a valid username`)
+            form.reset()
+        }else{
+            github.classList.remove('hide')
+            formContainer.classList.add('hide')
+            pageInfo(info)
+            info.repositories.edges.map(repo=> {
+                repoInfo(repo)
+            })
+        }
     })
 }
 
