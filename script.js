@@ -7,7 +7,6 @@ const inputName = document.querySelector('.input-name');
 const form = document.querySelector('.sign-in');
 const formContainer = document.querySelector('.login-form')
 const github = document.querySelector('.github-page')
-const submitBtn = document.querySelector('.submit');
 
 
 let getUserInfo = (e) => {
@@ -18,10 +17,9 @@ let getUserInfo = (e) => {
     .then(response => response.json())
     .then((data) => {
         let info = data.data.user
-        submitBtn.innerHTML = 'Locating user...'
+
         if (info === null){
             alert(`Please confirm that ${profileName} is a valid username`)
-            submitBtn.innerHTML = 'Sign in'
             form.reset()
         }else{
             github.classList.remove('hide')
