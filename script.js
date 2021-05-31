@@ -1,6 +1,5 @@
 // modules imported from the modules folder
 import pageInfo from './jsmodules/pageInfo.js'
-import profile from './jsmodules/query.js'
 import repoInfo from './jsmodules/repoInfo.js'
 
 
@@ -9,23 +8,12 @@ const form = document.querySelector('.sign-in');
 const formContainer = document.querySelector('.login-form')
 const github = document.querySelector('.github-page')
 
-const token = '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'
-
 
 let getUserInfo = (e) => {
     e.preventDefault()
     const profileName = inputName.value;
-
-    let body = JSON.stringify(profile(profileName));
-
-    fetch('https://api.github.com/graphql', {
-    method: 'post',
-    headers: {
-        'Content-Type': 'application/json',
-         authorization: `token ${token}`
-    },
-    body: body
-    })
+    
+    fetch(`https://gh-try.netlify.app/.netlify/functions/graphql-query/?profileName="${profileName}"`)
     .then(response => response.json())
     .then((data) => {
         let info = data.data.user
