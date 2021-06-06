@@ -21,9 +21,11 @@ let getUserInfo = (e) => {
         if (info === null){
             alert(`Please confirm that ${profileName} is a valid username`)
             form.reset()
+            submit.innerHTML = 'Sign in'
         }else{
             github.classList.remove('hide')
             formContainer.classList.add('hide')
+            submit.innerHTML = 'Sign in'
             pageInfo(info)
             info.repositories.edges.map(repo=> {
                 repoInfo(repo)
@@ -31,8 +33,6 @@ let getUserInfo = (e) => {
         }
     })
     .catch(error => alert('An error occured. Please check your internet connection and try again.'))
-
-     submit.innerHTML = 'Sign in'
 }
 
 form.addEventListener('submit', getUserInfo);
