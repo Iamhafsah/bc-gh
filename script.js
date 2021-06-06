@@ -31,6 +31,8 @@ let getUserInfo = (e) => {
         }
     })
     .catch(error => alert('An error occured. Please check your internet connection and try again.'))
+
+     submit.innerHTML = 'Sign in'
 }
 
 form.addEventListener('submit', getUserInfo);
